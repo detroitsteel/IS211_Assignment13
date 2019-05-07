@@ -1,0 +1,216 @@
+Exception on /viewstu [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv41.py", line 121, in stuqzurlink
+    qzscrload(stuid)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv41.py", line 54, in qzscrload
+    "on q.id = qs.q_id where s.id = ?", (stuid))
+OperationalError: no such table: quizScore
+Exception on /viewstu [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv41.py", line 121, in stuqzurlink
+    qzscrload(stuid)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv41.py", line 54, in qzscrload
+    "on q.id = qs.q_id where s.id = ?", (stuid))
+OperationalError: no such table: quizScore
+Exception on /viewstu [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv41.py", line 121, in stuqzurlink
+    qzscrload(stuid)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv41.py", line 54, in qzscrload
+    "on q.id = qs.q_id where s.id = ?", (stuid))
+OperationalError: no such table: quizScore
+Exception on /addstuqz [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv41.py", line 140, in SaveStuQz
+    "VALUES(?, ?, ?);", (stuid, qzuid, qzscr))
+IntegrityError: CHECK constraint failed: quizScore
+Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv42.py", line 69, in logincheck
+    g.uname = request.form['Username']
+NameError: global name 'g' is not defined
+Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 81, in logincheck
+    if unam == 'admin' and pp == 'password':
+NameError: global name 'unam' is not defined
+Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 81, in logincheck
+    loggy.credvalid(uname, pp)
+NameError: global name 'loggy' is not defined
+Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 85, in logincheck
+    app.logger.error(loginerror, g.uname, g.pp)
+NameError: global name 'g' is not defined
+Exception on /addstuqz [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 179, in SaveStuQz
+    "VALUES(?, ?, ?);", (stuid, qzuid, qzscr))
+IntegrityError: CHECK constraint failed: quizScore
+Exception on /addstuqz [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 184, in SaveStuQz
+    "VALUES(?, ?, ?);", (stuid, qzuid, qzscr))
+IntegrityError: CHECK constraint failed: quizScore
+Exception on /addstuqz [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 184, in SaveStuQz
+    "VALUES(?, ?, ?);", (stuid, qzuid, qzscr))
+IntegrityError: CHECK constraint failed: quizScore
+Exception on /addqz [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 148, in addqz
+    app.logger.error(traceback.format_exc())
+NameError: global name 'traceback' is not defined
+Traceback (most recent call last):
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 139, in addqz
+    QCnt = int(request.form['QCnt'])
+ValueError: invalid literal for int() with base 10: 'asfafs'
+
+Traceback (most recent call last):
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 139, in addqz
+    QCnt = int(request.form['QCnt'])
+ValueError: invalid literal for int() with base 10: 'xxxxx'
+
+Traceback (most recent call last):
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 139, in addqz
+    QCnt = int(request.form['QCnt'])
+ValueError: invalid literal for int() with base 10: ''
+
+Traceback (most recent call last):
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 139, in addqz
+    QCnt = int(request.form['QCnt'])
+ValueError: invalid literal for int() with base 10: ''
+
+Traceback (most recent call last):
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 188, in SaveStuQz
+    "VALUES(?, ?, ?);", (stuid, qzuid, qzscr))
+IntegrityError: CHECK constraint failed: quizScore
+
+Traceback (most recent call last):
+  File "/home/ka23148154/git@github.com:detroitsteel/IS211_Assignment12.git/studQuizv43.py", line 188, in SaveStuQz
+    "VALUES(?, ?, ?);", (stuid, qzuid, qzscr))
+IntegrityError: CHECK constraint failed: quizScore
+

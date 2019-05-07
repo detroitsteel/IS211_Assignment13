@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Quiz</title>	
+
+    <link     href='http://fonts.googleapis.com/css?family=Sintony:400,700'     rel='stylesheet' type='text/css'>
+
+    <style type="text/css">    
+      body
+      {
+        background-color:#fff;
+      }
+
+      h1
+      {
+        font-size:48px;
+        margin-top:0;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #292929;
+        letter-spacing:4px;
+        text-decoration:none;
+        color:#DDD;
+      }
+
+      #ListTXT
+      h2
+      {
+        font-size:32px;
+        margin-top:0;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #DDD;
+        letter-spacing:4px;
+        text-decoration:none;
+        color:#292929;
+      }
+
+      #todotbl
+      table, th, td 
+	{
+  	border: 2px solid black;
+
+	}
+
+      #banner
+      {
+        width:300px;
+        height:100px;
+        text-align:center;
+        <!--background-image:url(http://127.0.0.1:5000/static/DummyFat.gif);-->
+        background-repeat:no-repeat;
+        border-radius:5px;
+        margin:10px auto auto;
+        padding:10px 0;
+      }
+
+      #tbltitle
+	.tbltitle
+      {
+        width:500px;
+        height:200px;
+        text-align:center;
+        background-repeat:no-repeat;
+        border-radius:2px;
+        margin:3px auto auto;
+        padding:3px 0;
+      }
+
+      .lead
+      {
+        background-color:rgba(255,255,255,0.6);
+        border-radius:3px;
+        text-align:center;
+        box-shadow:rgba(0,0,0,0.2) 0 1px 3px;
+        font-family:Sintony, sans-serif;
+      }
+    </style>
+
+  </head>  
+
+  <body>
+<div id="banner">
+      <h1>Add New Quiz</h1>
+</div>
+<p class="lead">Add a New Quiz Form </br>
+	<font color="RED">{{ error}}</font></p>
+<form action="/addqz" method="post">
+  	Quiz Subject: <input type="text" name="QzSubj"></input></br>
+  	Number of Quiz Questions: <input type="text" name="QCnt"></input></br>
+  	Date of Quiz: <input type="date" name="QzDte"></input></br>
+  	<input type="submit" value="Add New"></input>
+</form>
+<table style="width:100%">
+      <p class="lead">List of Quizes</p>
+	<tr>
+	<h2>
+	<p class="lead">
+		<th>Quiz ID</th>
+		<th>Quiz Subject</th>
+		<th>Quiz Question Count</th>
+		<th>Quiz Date</th>
+	</p>
+	</h2>	
+	</tr>
+      	{% for qz in qzlist%}
+	<tr>
+	<h2>
+	<p class="lead">
+		<td>{{ qz }}</td>
+		<td>{{ qzlist[qz][0] }}</td>
+		<td> {{ qzlist[qz][1] }}</td>
+		<td> {{ qzlist[qz][2] }}</td>
+	</p>
+	</h2>	
+	</tr>
+	{% endfor %}	
+
+</table>
+  </body>
+</html>

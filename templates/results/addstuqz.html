@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Student Quiz Details</title>	
+
+    <link     href='http://fonts.googleapis.com/css?family=Sintony:400,700'     rel='stylesheet' type='text/css'>
+
+    <style type="text/css">    
+      body
+      {
+        background-color:#fff;
+      }
+
+      h1
+      {
+        font-size:48px;
+        margin-top:0;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #292929;
+        letter-spacing:4px;
+        text-decoration:none;
+        color:#DDD;
+      }
+
+      #ListTXT
+      h2
+      {
+        font-size:32px;
+        margin-top:0;
+        font-family:Arial, sans-serif;
+        text-shadow:2px 0 15px #DDD;
+        letter-spacing:4px;
+        text-decoration:none;
+        color:#292929;
+      }
+
+      #todotbl
+      table, th, td 
+	{
+  	border: 2px solid black;
+
+	}
+
+      #banner
+      {
+        text-align:center;
+        <!--background-image:url(http://127.0.0.1:5000/static/DummyFat.gif);-->
+        background-repeat:no-repeat;
+        border-radius:5px;
+        margin:10px auto auto;
+        padding:10px 0;
+      }
+
+      #tbltitle
+	.tbltitle
+      {
+        width:500px;
+        height:200px;
+        text-align:center;
+        background-repeat:no-repeat;
+        border-radius:2px;
+        margin:3px auto auto;
+        padding:3px 0;
+      }
+
+      .lead
+      {
+        background-color:rgba(255,255,255,0.6);
+        border-radius:3px;
+        text-align:center;
+        box-shadow:rgba(0,0,0,0.2) 0 1px 3px;
+        font-family:Sintony, sans-serif;
+      }
+	</style>
+		</head>  
+	<body>
+<div id="banner">
+      <h1>Add Students Quiz Details</h1>
+</div>
+<p class="lead">Add Students Quiz Form</br>
+	<font color="RED">{{ error}}</font></p>
+<form action="/addstuqz" method="post">
+	Student ID: <select name = "StuID">
+		{% for id in stulist%}
+			<option value = {{ id }}>{{ id }}</option>
+		{% endfor %}
+	</select></br>
+	Quiz ID: <select name = "QzID">
+		{% for id in qzlist%}
+			<option value = {{ id }}>{{ id }}</option>
+		{% endfor %}
+	</select></br>
+  	Quiz Score: <input type="text" name="QzScr"></input></br>
+  	<input type="submit" value="Add New"></input>
+</form>
+	</body>
+		</html>
